@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>web_api_crud</name>
+    </assembly>
+    <members>
+        <member name="M:web_api_crud.Controllers.StudentApiController.GetStudents">
+            <summary>
+            Get All Student Data
+            </summary>
+            <returns>
+              200 OK with a list of student data if students are found.
+              404 Not Found if no students are found.
+            </returns>
+        </member>
+        <member name="M:web_api_crud.Controllers.StudentApiController.GetStudentsById(System.String)">
+            <summary>
+            Get the Particular Data Of Student by their Respective <paramref name="id"/>
+            </summary>
+            <param name="id">The ID of the student to retrieve.</param>
+            <returns>
+              200 OK with the student data if the student is found.
+              404 Not Found if the student with the given ID is not found.
+            </returns>
+        </member>
+        <member name="M:web_api_crud.Controllers.StudentApiController.CreateStudent(web_api_crud.Models.Student)">
+            <summary>
+            Create a New Student with Data
+            </summary>
+            <param name="std">The student data to create.</param>
+            <returns>
+              201 Created if the student is successfully created.
+              400 Bad Request if there are validation errors or other issues with the request.
+            </returns>
+        </member>
+        <member name="M:web_api_crud.Controllers.StudentApiController.UpdateStudent(System.String,web_api_crud.Models.Student)">
+            <summary>
+            Update the Data of Existing Student by <paramref name="id"/>
+            </summary>
+            <param name="id">The ID of the student to update.</param>
+            <param name="std">The updated student data.</param>
+            <returns>
+              200 OK if the student is successfully updated.
+              400 Bad Request if the provided ID in the URL does not match the student's ID.
+            </returns>
+        </member>
+        <member name="M:web_api_crud.Controllers.StudentApiController.DeleteStudent(System.String)">
+            <summary>
+            Delete Student Data By <paramref name="id"/>
+            </summary>
+            <param name="id">The ID of the student to delete.</param>
+            <returns>
+              200 OK if the student is successfully deleted.
+              404 Not Found if the student with the given ID is not found.
+            </returns>
+        </member>
+        <member name="P:web_api_crud.Models.Student.StudentId">
+            <summary>
+            Student Id Enter as String (Limit 10) Sample Format => "STDN00001"
+            </summary>
+        </member>
+        <member name="P:web_api_crud.Models.Student.Gender">
+            <summary>
+            Student Gender  Enter as Char (Limit 1) Sample Format => "M/F"
+            </summary>
+        </member>
+        <member name="P:web_api_crud.Models.Student.NationalIty">
+            <summary>
+            Student Nationality Enter as String (Limit 50) Sample Format => "IN/KW"
+            </summary>
+        </member>
+        <member name="P:web_api_crud.Models.Student.PlaceofBirth">
+            <summary>
+            Student PlaceOfBirth Enter as String (Limit 50) Sample Format => "India/Russia"
+            </summary>
+        </member>
+        <member name="P:web_api_crud.Models.Student.StageId">
+            <summary>
+            Student StageId Enter as String (Limit 20) Sample Format => "Lower/Level"
+            </summary>
+        </member>
+        <member name="P:web_api_crud.Models.Student.GradeId">
+            <summary>
+            Student GradeId Enter as String (Limit 10) Sample Format => "G-04"
+            </summary>
+        </member>
+        <member name="P:web_api_crud.Models.Student.SectionId">
+            <summary>
+            Student SectionId Enter as Char (Limit 1) Sample Format => "G-04"
+            </summary>
+        </member>
+        <member name="P:web_api_crud.Models.Student.Topic">
+            <summary>
+            Student Topic Enter as Char (Limit 1) SSample Format => "A/B"
+            </summary>
+        </member>
+        <member name="P:web_api_crud.Models.Student.Semester">
+            <summary>
+            Student Topic Enter as String (Limit 50) Sample Format => "French/Science"
+            </summary>
+        </member>
+        <member name="P:web_api_crud.Models.Student.Relation">
+            <summary>
+            Student Semester Enter as Char (Limit 1) Sample Format => "S/F"
+            </summary>
+        </member>
+        <member name="P:web_api_crud.Models.Student.Raisedhands">
+            <summary>
+            Student Relation Enter as String (Limit 20) Sample Format => "Mother/Father"
+            </summary>
+        </member>
+        <member name="P:web_api_crud.Models.Student.VisItedResources">
+            <summary>
+            Raisedhands Enter as Int  Sample Format => "90"
+            </summary>
+        </member>
+        <member name="P:web_api_crud.Models.Student.AnnouncementsView">
+            <summary>
+            VisItedResources  Enter as Int  Sample Format => "80"
+            </summary>
+        </member>
+        <member name="P:web_api_crud.Models.Student.Discussion">
+            <summary>
+            AnnouncementsView Enter as Int  Sample Format => "97"
+            </summary>
+        </member>
+        <member name="P:web_api_crud.Models.Student.ParentAnsweringSurvey">
+            <summary>
+            Student Discussion Enter as Int  Sample Format => "70"
+            </summary>
+        </member>
+        <member name="P:web_api_crud.Models.Student.ParentschoolSatisfaction">
+            <summary>
+            ParentAnsweringSurvey Enter as String (Limit 3) SSample Format => "Yes/No"
+            </summary>
+        </member>
+        <member name="P:web_api_crud.Models.Student.StudentAbsenceDays">
+            <summary>
+            ParentSchoolSatisfaction  Enter as Stringb  (Limit 10) Sample Format => "Good/Bad"
+            </summary>
+        </member>
+        <member name="P:web_api_crud.Models.Student.StudentMarks">
+            <summary>
+            Student AbsenceDays Enter as String (Limit 10) Sample Format => "Under-10"
+            </summary>
+        </member>
+        <member name="P:web_api_crud.Models.Student.Class">
+            <summary>
+            Student Marks Enter as Int  Sample Format => "93"
+            </summary>
+        </member>
+    </members>
+</doc>
